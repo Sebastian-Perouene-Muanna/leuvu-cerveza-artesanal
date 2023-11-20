@@ -11,7 +11,7 @@
 <body>
 
 
-<!-- Header con Navbar -->
+
     <header class="hero">
         <video id="video-bg" autoplay loop muted>
         <source src="./videos//pexels-cottonbro-5538282 (2160p).mp4">
@@ -23,8 +23,7 @@
         <a href="#productos" class="cta-button">Ver Nuestros Productos</a>
             </div>
 
-            
-<!-- Barra de navegación -->
+
 <div class="navbar" id="navbar">
     <div class="hops-icon">
         <i class="fas fa-hop-cone"></i>
@@ -37,7 +36,8 @@
         <li><a href="#productos">Nuestros Productos</a></li>
         <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <!-- Contenedor del carrito -->
+
+    
     <div class="cart-container">
         <div class="cart-icon" onclick="openCart()">
             <i class="fas fa-shopping-cart"></i>
@@ -48,32 +48,32 @@
 </header>
 
 
-<!-- Acerca de Nosotros -->
+
 <section id="acerca" class="about-section custom-background">
     <h2>Acerca de Nosotros</h2>
 
-    <!-- Imágenes y detalles de las personas -->
+   
     <div class="team-member">
         <img src="./image/miembro 1.jpg" alt="Foto de Nicolás" class="team-member-img">
         <h3>Nicolás</h3>
         <h4>Maestro Cervecero</h4>
     </div>
 
-    <!-- Segundo miembro -->
+
     <div class="team-member">
         <img src="./image/miembro 2.jpg" alt="Foto de Facundo" class="team-member-img">
         <h3>Sebastián</h3>
         <h4>Marketing Cervecero</h4>
     </div>
 
-    <!-- Tercer miembro -->
+
     <div class="team-member">
         <img src="./image/miembro 3.webp" alt="Foto de Sebastián" class="team-member-img">
         <h3>Facundo</h3>
         <h4>Encargado de Producción</h4>
     </div>
 
-    <!-- Texto de la sección Acerca de Nosotros -->
+   
     <div class="about-text">
         <p>Somos tres hermanos del Valle Medio de Río Negro, dedicados a la maestría en la elaboración de cerveza. Nuestra historia se entrelaza con la tradición cervecera y el compromiso con la calidad.</p>
         <p>Nos enorgullece utilizar exclusivamente materias primas locales, contribuyendo al desarrollo de nuestra región como un epicentro ideal para el cultivo de ingredientes excepcionales.</p>
@@ -82,42 +82,42 @@
         <p>¡Brindemos por la excelencia!</p>
     </div>
 
-    <!-- Logo de la empresa -->
+   
 <img src="./image/LOGO 2_page-0002.jpg" alt="Logo de la Empresa" class="logo">
 
 </section>
 
 
 
-    <!-- Carta Productos -->
     <section id="productos" class="custom-background">
         <div class="content">
             <h2>Nuestros Productos</h2>
 
-            <!-- Sección de Tarjetas de Categorías -->
+
+            
             <div class="category-cards">
-                <!-- Tarjeta de Cervezas -->
+               
                 <div class="product-card category-card" onclick="openCategoryPage('cerveza')">
                     <img src="./image/pexels-cottonbro-studio-5530264.jpg" alt="Cervezas">
                     <h3>Cervezas</h3>
                     <p>Ver más</p>
                 </div>
 
-                <!-- Tarjeta de Insumos de Cerveza Artesanal -->
+                
                 <div class="product-card category-card" onclick="openCategoryPage('insumos')">
                     <img src="./image/meg-macdonald-a-lp8uCFtyE-unsplash.jpg" alt="Insumos">
                     <h3>Insumos de Cerveza Artesanal</h3>
                     <p>Ver más</p>
                 </div>
 
-                <!-- Tarjeta de Cursos -->
+            
                 <div class="product-card category-card" onclick="openCategoryPage('cursos')">
                     <img src="./image/cursos.jpg" alt="Cursos">
                     <h3>Cursos</h3>
                     <p>Ver más</p>
                 </div>
 
-                <!-- Tarjeta de Kits Cerveceros -->
+                
                 <div class="product-card category-card" onclick="openCategoryPage('kits')">
                     <img src="./image/Kit-para-hacer-cervezaf03716.jpg" alt="Kits Cerveceros">
                     <h3>Kits Cerveceros</h3>
@@ -126,7 +126,7 @@
 
             </div>
 
-            <!-- Aquí se cargarán los productos según la categoría seleccionada -->
+            
             <div id="product-list"></div>
         </div>
     </section>
