@@ -1,23 +1,22 @@
-/* Estilos para el body (fondo semitransparente) */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Estilo para h2 */
+
 h2 {
     color: #000000;
     font-size: 2em;
 }
 
-/* Estilo para h3 */
+
 h3 {
     color: #000000;
     font-size: 1.5em;
 }
 
-/* Estilos del navbar */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -33,7 +32,7 @@ h3 {
     border: 2px solid #fff;
 }
 
-/* Cambios para el efecto de fondo al hacer scroll */
+
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.9);
 }
@@ -49,7 +48,7 @@ h3 {
     margin-right: 50px;
 }
 
-/* Estilos de los enlaces en el navbar */
+
 .navigation a {
     text-decoration: none;
     color: #fff;
@@ -61,7 +60,7 @@ h3 {
     color: #0fff2f;
 }
 
-/* Estilos del ícono de menú en el navbar */
+
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -70,7 +69,7 @@ h3 {
     transition: color 0.3s;
 }
 
-/* Estilos para dispositivos pequeños */
+
 @media only screen and (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -98,7 +97,7 @@ h3 {
     }
 }
 
-/* Estilos para el carrito en el navbar */
+
 .cart-container {
     display: flex;
     align-items: center;
@@ -126,7 +125,7 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Estilo para h1 en el banner */
+
 .banner h1 {
     color: #FFFFFF;
     font-size: 3.5em;
@@ -153,7 +152,7 @@ h3 {
     background-color: #0bc918;
 }
 
-/* Estilos para las secciones */
+
 .content {
     max-width: 800px;
     margin: 0 auto;
@@ -162,13 +161,13 @@ h3 {
     background-color: #ffffff;
 }
 
-/* Estilos para la sección de Productos */
+
 #productos {
     padding: 40px;
     color: #ffffff;
 }
 
-/* Estilos para las tarjetas de productos */
+
 .product-card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -227,7 +226,7 @@ h3 {
     background-color: #0bc918;
 }
 
-/* Estilos para el icon container */
+
 .icon-container {
     display: flex;
     justify-content: space-around;
@@ -262,7 +261,7 @@ h3 {
     padding: 0px 0px 0px 0px;
 }
 
-/* ESTILOS SECCIÓN FOOTER */
+
 footer {
     background-color: #000000;
     color: #fff;
@@ -333,7 +332,7 @@ footer {
     padding: 10px;
 }
 
-/* Estilo para h2 dentro del footer */
+
 footer h3 {
     color: #ffffff;
 }
