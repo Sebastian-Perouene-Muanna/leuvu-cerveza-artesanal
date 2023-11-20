@@ -1,0 +1,500 @@
+/* Estilos para el body (fondo semitransparente) */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo para h1 y h3 en la sección hero */
+.hero-content h1 {
+    color: #FFFFFF; /* Cambia el color según tus preferencias */
+    font-size: 3.5em; /* Ajusta el tamaño según tus preferencias */
+    font-weight: bold; /* Agrega negrita para resaltar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajusta la sombra de texto para mejorar la legibilidad */
+}
+
+.hero-content h3 {
+    color: #FFFFFF; /* Cambia el color según tus preferencias */
+    font-size: 2em; /* Ajusta el tamaño según tus preferencias */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajusta la sombra de texto para mejorar la legibilidad */
+}
+
+.cta-button:hover {
+    background-color:#0bc918;
+}
+
+/* Estilos para h2 en la sección Acerca de Nosotros */
+h2 {
+    color: #ffffff; /* Cambia el color según tus preferencias */
+    font-size: 1em; /* Ajusta el tamaño según tus preferencias */
+    font-weight: bold; /* Agrega negrita para resaltar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajusta la sombra de texto para mejorar la legibilidad */
+}
+
+
+
+/* Estilos del navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s, backdrop-filter 0.3s; /* Agregamos la transición para el desenfoque */
+    border: 2px solid #fff;
+    backdrop-filter: blur(10px); /* Aplicamos un desenfoque al fondo */
+}
+
+/* Cambios para el efecto de fondo al hacer scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    margin-right: 50px;
+}
+
+/* Estilos de los enlaces en el navbar */
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #0fff2f;
+}
+
+/* Estilos del ícono de menú en el navbar */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+/* Estilos para dispositivos pequeños */
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+        backdrop-filter: blur(10px); /* Aplicamos desenfoque también en dispositivos pequeños */
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+
+    .navigation.show li {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ffffff;
+        margin-right: 0;
+    }
+}
+
+
+/* Estilos del ícono de lúpulo en el navbar */
+.hops-icon {
+    margin-right: 10px; /* Ajusta el espacio entre el ícono de lúpulo y el resto del contenido según tus preferencias */
+}
+
+.hops-icon i {
+    font-size: 24px; /* Ajusta el tamaño del ícono de lúpulo según tus preferencias */
+    color: #fff; /* Color del ícono de lúpulo, ajusta según tus preferencias */
+}
+
+
+
+
+/* Estilos para el carrito en el navbar */
+.cart-container { 
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Empuja el carrito hacia la derecha */
+    padding-right: 15px; /* Añade un espacio a la derecha del carrito */
+}
+
+.cart-icon {
+    cursor: pointer;
+    position: relative;
+    color: #0bc918;
+    font-size: 24px; /* Ajusta el tamaño según tus preferencias */
+}
+
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    
+}
+
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2; /* Ajusta según sea necesario */
+}
+
+.custom-background {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0); /* Fondo negro con 50% de opacidad, ajusta según tus preferencias */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; /* Ajusta el color del texto a blanco o el que prefieras */
+    background-color: rgba(0, 0, 0, 0.653); /* Fondo negro con 50% de opacidad, ajusta según tus preferencias */
+    z-index: 1;
+    padding: 15px; /* Ajusta el espaciado interno según tus necesidades */
+    border-radius: 50px; /* Ajusta el radio de borde según tus preferencias */
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #02941f;
+    color: #fff;
+    padding: 15px 30px; /* Ajusta el padding según tus necesidades */
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+}
+
+/* Estilos para la sección Acerca de Nosotros */
+.about-section {
+    padding: 100px 0; /* Ajusta el espaciado interno según tus necesidades */
+    text-align: center;
+    position: relative;
+    color: #ffffff; /* Color del texto, ajusta según tus preferencias */
+    border: 2px solid #fff; /* Agrega una línea alrededor del contorno del footer */
+    border-radius: 10px; /* Ajusta el radio de borde según tus preferencias */
+}
+
+/* Estilos para el título de la sección Acerca de Nosotros */
+.about-section h2 {
+    font-size: 36px; /* Ajusta el tamaño del h2 según tus preferencias */
+    margin-bottom: 30px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+/* Estilos para las imágenes de los miembros del equipo */
+.team-member {
+    display: inline-block;
+    margin: 0 20px 40px; /* Espaciado entre las imágenes y margen inferior, ajusta según tus necesidades */
+    text-align: center;
+}
+
+.team-member img {
+    width: 250px; /* Ajusta el ancho de todas las imágenes según tus necesidades */
+    height: 250px; /* Ajusta la altura de todas las imágenes según tus necesidades */
+    object-fit: cover; /* Ajusta la forma de la imagen para cubrir el contenedor sin distorsionar */
+    border: 2px solid #0bc918; /* Agrega una línea alrededor del contorno del footer */
+    border-radius: 10px; /* Ajusta el radio de borde según tus preferencias */
+}
+
+/* Estilos para los títulos y párrafos dentro de la sección Acerca de Nosotros */
+#acerca h2 {
+    font-size: 36px; /* Ajusta el tamaño del h2 según tus preferencias */
+    margin-bottom: 20px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+.team-member h3 {
+    font-size: 35px; /* Ajusta el tamaño del h3 según tus preferencias */
+    margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+.team-member h4 {
+    font-size: 25px; /* Ajusta el tamaño del h4 según tus preferencias */
+    margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+.about-section p {
+    font-size: 25px; /* Ajusta el tamaño del texto según tus preferencias */
+    margin-bottom: 60px; /* Ajusta el margen inferior según tus necesidades */
+    max-width: 1200px; /* Ajusta el ancho máximo según tus preferencias */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para el logo de la empresa */
+.logo {
+    width: 800px; /* Ajusta el ancho del logo según tus necesidades */
+    margin-top: 1px; /* Ajusta el margen superior según tus necesidades */
+    border: 2px solid #0bc918; /* Agrega una línea alrededor del contorno del footer */
+    border-radius: 10px; /* Ajusta el radio de borde según tus preferencias */
+}
+
+
+
+
+
+/* Estilos para la sección Productos */
+#productos {
+    padding: 100px 0; /* Ajusta el espaciado interno según tus necesidades */
+    text-align: center;
+    position: relative;
+    color: #fff; /* Color del texto, ajusta según tus preferencias */
+    border: 2px solid #fff; /* Agrega una línea alrededor del contorno del footer */
+    border-radius: 10px; /* Ajusta el radio de borde según tus preferencias */
+}
+
+/* Estilos para el título de la sección Productos */
+#productos h2 {
+    font-size: 36px; /* Ajusta el tamaño del h2 según tus preferencias */
+    margin-bottom: 30px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+    width: 10px; /* Ajusta el ancho de la tarjeta según tus preferencias, por ejemplo, 150px */
+    margin: 60px; /* Ajusta el margen entre las tarjetas según tus preferencias */
+    overflow: hidden; /* Evita que el contenido exceda el tamaño de la tarjeta */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al efecto hover */
+    border: 2px solid   #0bc918; /* Agrega una línea alrededor del contorno del footer */
+    border-radius: 10px; /* Ajusta el radio de borde según tus preferencias */
+}
+
+/* Estilos para la imagen dentro de la tarjeta de productos */
+.product-card img {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tus preferencias, por ejemplo, 200px */
+    object-fit: cover; /* Cubre completamente el contenedor con la imagen sin distorsionar */
+    border-radius: 10px; /* Bordes redondeados en todos los lados */
+}
+
+/* Estilos para el título dentro de la tarjeta de productos */
+.product-card h3 {
+    font-size: 26px; /* Ajusta el tamaño del h3 según tus preferencias */
+    margin: 10px 0;
+}
+
+/* Estilos para el párrafo dentro de la tarjeta de productos */
+.product-card p {
+    font-size: 16px; /* Ajusta el tamaño del texto según tus preferencias */
+    margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+/* Efecto hover para las tarjetas de productos */
+.product-card:hover {
+    transform: scale(1.2); /* Ajusta el factor de escala según tus preferencias */
+}
+
+
+/* Cambio de color al pasar el ratón sobre el texto "Ver más" */
+.product-card:hover p {
+    color: #0bc918; /* Cambia el color al pasar el ratón sobre el texto "Ver más" */
+}
+
+/* Estilos para la disposición de las tarjetas en dos filas */
+.category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-card {
+    flex: 0 0 calc(60% - 70px); /* Ajusta el ancho de las tarjetas según tus preferencias */
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Estilos para la sección Contacto */
+#contacto {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/* Estilos para el título de la sección Contacto */
+#contacto .section-title {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+/* Estilos para la información de contacto */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    flex-basis: 60%; /* Ajusta el ancho de cada elemento según tus necesidades */
+    margin-bottom: 30px;
+}
+
+.contact-item i {
+    margin-right: 30px;
+    font-size: 40px;
+    color: #42a115;
+    margin-bottom: 20px;
+}
+
+.contact-item p {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilos para el enlace de correo electrónico */
+.contact-info a {
+    color: #42a115;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #0fff2f;
+}
+
+
+
+
+
+ /*ESTILOS SECCIÓN FOOTER */
+footer {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+    .payment-container h3 {
+        font-size: 24px; /* Puedes ajustar el tamaño del texto según tus preferencias */
+
+
+    }
+    .links-container a {
+        color: #4CAF50; /* Color verde */
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .links-container a:hover {
+        color: #0fff2f; /* Cambiar color en hover */
+    }
+
+    .links-container a[href*="instagram"]:hover {
+        color: #e4405f; /* Cambiar el color solo para el enlace de Instagram en hover */
+    }
+
+    .links-container i {
+        font-size: 2em; /* Tamaño más grande del icono */
+        margin-right: 5px; /* Espacio entre el icono y el texto */
+    }
+
+    .links-container span {
+        font-size: 1.5em; /* Tamaño del texto */
+    }
+    
+    .payment-container img {
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .links-container a {
+        color: #fff;
+        margin-right: 30px;
+        text-decoration: none;
+        display: block;
+        line-height: 1.5em; 
+        padding-bottom: 10px; 
+    }
+    
+    .map-container {
+        width: 50%;
+        height: 200px;
+        float: right;
+        margin-left: 50px;
+    }
+    
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    
+    .copyright  {
+        background-color: #000000;
+        color: #fff;
+        padding: 10px;
+    }
+
+
+    #scrollToTop {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        display: none;
+        font-size: 20px;
+        background-color: #42a115;
+        color: #ffffff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #scrollToTop:hover {
+        background-color: #0fff2f;
+    }
+
+
+    

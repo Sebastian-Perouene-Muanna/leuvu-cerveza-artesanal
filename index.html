@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title>Leuvú Cerveza Artesanal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<!-- Header con Navbar -->
+    <header class="hero">
+        <video id="video-bg" autoplay loop muted>
+        <source src="./videos//pexels-cottonbro-5538282 (2160p).mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+    <div class="hero-content">
+        <h1>Leuvú - Cerveza Artesanal</h1>
+        <h3>De nosotros para ustedes</h3>
+        <a href="#productos" class="cta-button">Ver Nuestros Productos</a>
+            </div>
+
+            
+<!-- Barra de navegación -->
+<div class="navbar" id="navbar">
+    <div class="hops-icon">
+        <i class="fas fa-hop-cone"></i>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navigation">
+        <li><a href="#acerca">Acerca de Nosotros</a></li>
+        <li><a href="#productos">Nuestros Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <!-- Contenedor del carrito -->
+    <div class="cart-container">
+        <div class="cart-icon" onclick="openCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-item-count" id="cartItemCount">0</span>
+        </div>
+    </div>
+</div>
+</header>
+
+
+<!-- Acerca de Nosotros -->
+<section id="acerca" class="about-section custom-background">
+    <h2>Acerca de Nosotros</h2>
+
+    <!-- Imágenes y detalles de las personas -->
+    <div class="team-member">
+        <img src="./image/miembro 1.jpg" alt="Foto de Nicolás" class="team-member-img">
+        <h3>Nicolás</h3>
+        <h4>Maestro Cervecero</h4>
+    </div>
+
+    <!-- Segundo miembro -->
+    <div class="team-member">
+        <img src="./image/miembro 2.jpg" alt="Foto de Facundo" class="team-member-img">
+        <h3>Sebastián</h3>
+        <h4>Marketing Cervecero</h4>
+    </div>
+
+    <!-- Tercer miembro -->
+    <div class="team-member">
+        <img src="./image/miembro 3.webp" alt="Foto de Sebastián" class="team-member-img">
+        <h3>Facundo</h3>
+        <h4>Encargado de Producción</h4>
+    </div>
+
+    <!-- Texto de la sección Acerca de Nosotros -->
+    <div class="about-text">
+        <p>Somos tres hermanos del Valle Medio de Río Negro, dedicados a la maestría en la elaboración de cerveza. Nuestra historia se entrelaza con la tradición cervecera y el compromiso con la calidad.</p>
+        <p>Nos enorgullece utilizar exclusivamente materias primas locales, contribuyendo al desarrollo de nuestra región como un epicentro ideal para el cultivo de ingredientes excepcionales.</p>
+        <p>Guiados por la excelencia y un fuerte compromiso con la sostenibilidad, minimizamos nuestro impacto ambiental y lideramos prácticas responsables en todas las fases de producción.</p>
+        <p>Te extendemos una cordial invitación a explorar esta experiencia auténtica, donde la tradición, la calidad y el respeto por nuestra tierra se fusionan en cada botella.</p>
+        <p>¡Brindemos por la excelencia!</p>
+    </div>
+
+    <!-- Logo de la empresa -->
+<img src="./image/LOGO 2_page-0002.jpg" alt="Logo de la Empresa" class="logo">
+
+</section>
+
+
+
+    <!-- Carta Productos -->
+    <section id="productos" class="custom-background">
+        <div class="content">
+            <h2>Nuestros Productos</h2>
+
+            <!-- Sección de Tarjetas de Categorías -->
+            <div class="category-cards">
+                <!-- Tarjeta de Cervezas -->
+                <div class="product-card category-card" onclick="openCategoryPage('cerveza')">
+                    <img src="./image/pexels-cottonbro-studio-5530264.jpg" alt="Cervezas">
+                    <h3>Cervezas</h3>
+                    <p>Ver más</p>
+                </div>
+
+                <!-- Tarjeta de Insumos de Cerveza Artesanal -->
+                <div class="product-card category-card" onclick="openCategoryPage('insumos')">
+                    <img src="./image/meg-macdonald-a-lp8uCFtyE-unsplash.jpg" alt="Insumos">
+                    <h3>Insumos de Cerveza Artesanal</h3>
+                    <p>Ver más</p>
+                </div>
+
+                <!-- Tarjeta de Cursos -->
+                <div class="product-card category-card" onclick="openCategoryPage('cursos')">
+                    <img src="./image/cursos.jpg" alt="Cursos">
+                    <h3>Cursos</h3>
+                    <p>Ver más</p>
+                </div>
+
+                <!-- Tarjeta de Kits Cerveceros -->
+                <div class="product-card category-card" onclick="openCategoryPage('kits')">
+                    <img src="./image/Kit-para-hacer-cervezaf03716.jpg" alt="Kits Cerveceros">
+                    <h3>Kits Cerveceros</h3>
+                    <p>Ver más</p>
+                </div>
+
+            </div>
+
+            <!-- Aquí se cargarán los productos según la categoría seleccionada -->
+            <div id="product-list"></div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-contact custom-background">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Teléfono: (221) 501-7957</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Dirección: Choele Choel, Río Negro</p>
+                </div>
+                <div class="contact-item">
+                    <i class="far fa-envelope"></i>
+                    <p>Email: <a href="mailto:leuvu.cervezartesanal@gmail.com">leuvu.cervezartesanal@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="payment-container"> 
+          <h3>Medios de pago</h3>
+          <br>
+          <img src="https://sebastian-perouene-muanna.github.io/Trabajo-Integrador-final/a5f047d0-9be0-11ec-aad4-c3381f368aaf-m.svg" alt="Visa">
+          <img src="https://sebastian-perouene-muanna.github.io/Trabajo-Integrador-final/aa2b8f70-5c85-11ec-ae75-df2bef173be2-m.svg" alt="Mastercard">
+          <img src="https://sebastian-perouene-muanna.github.io/Trabajo-Integrador-final/fbf867c0-9108-11ed-87b1-fd4dd99fac51-m.svg" alt="American Express">
+          <img src="https://sebastian-perouene-muanna.github.io/Trabajo-Integrador-final/992bc350-f3be-11eb-826e-6db365b9e0dd-m.svg" alt="Naranja">
+        </div>
+    
+        <div class="links-container">
+            <a href="https://wa.me/5492215017957" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+            <a href="https://www.instagram.com/leuvu.cerveza.artesanal/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+          </div>
+    
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d864.3884594837962!2d-65.67115929214407!3d-39.282141809911074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1700239935365!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+     </footer>
+    
+      <div class="copyright">
+        <p>&copy; 2023 Cerveza Leuvú, Patagonia Argentina. Todos los derechos reservados.</p>
+      </div>
+
+    <button id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+    
+
+
+    <script src="script.js"></script>
+
+
+    
+</body>
+</html>
