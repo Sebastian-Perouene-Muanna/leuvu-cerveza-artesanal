@@ -1,17 +1,14 @@
-/* Estilos para el body (fondo semitransparente) */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Estilo para h2 */
 h2 {
     color: #000000;
     font-size: 2em;
 }
 
-/* Estilo para h3 */
 h3 {
     color: #000000;
     font-size: 1.5em;
@@ -21,8 +18,13 @@ h3 {
     position: fixed;
     top: 0;
     width: 100%;
+<<<<<<< HEAD
     background-color: rgba(0, 0, 0, 0.539);
     padding: 1px;
+=======
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 0.5em;
+>>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -49,13 +51,21 @@ h3 {
 }
 
 .navigation li {
+<<<<<<< HEAD
     margin-right: 2vw;
+=======
+    margin-right: 2em;
+>>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
 }
 
 .navigation a {
     text-decoration: none;
     color: #fff;
+<<<<<<< HEAD
     font-size: 1.7vw;
+=======
+    font-size: 1.3em;
+>>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
     transition: color 0.3s;
 }
 
@@ -67,7 +77,11 @@ h3 {
     display: none;
     cursor: pointer;
     color: #fff;
+<<<<<<< HEAD
     font-size: 1vw;
+=======
+    font-size: 1em;
+>>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
     transition: color 0.3s;
 }
 
@@ -93,25 +107,42 @@ h3 {
     }
 
     .navigation.show li {
+<<<<<<< HEAD
         padding: 1vw;
+=======
+        padding: 1em;
+>>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
         text-align: center;
         border-bottom: 1px solid #ffffff;
         margin-right: 0;
     }
 }
 
+<<<<<<< HEAD
 .cart-container { 
     display: flex;
     align-items: center;
     margin-left: auto; 
     padding-right: 1.5vw; 
+=======
+.cart-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 1.5em;
+    position: relative;
+>>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
 }
 
 .cart-icon {
     cursor: pointer;
     position: relative;
     color: #0bc918;
+<<<<<<< HEAD
     font-size: 1.8vw; 
+=======
+    font-size: 1.5em;
+>>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
 }
 
 .banner {
@@ -121,12 +152,11 @@ h3 {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 200px 0;
+    padding: 4em 0;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Estilo para h1 en el banner */
 .banner h1 {
     color: #FFFFFF;
     font-size: 3.5em;
@@ -136,12 +166,12 @@ h3 {
 
 .banner h3 {
     font-size: 1.8em;
-    margin-bottom: 20px;
+    margin-bottom: 1.5em;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1em 2em;
     background-color: #42a115;
     color: white;
     text-decoration: none;
@@ -153,55 +183,52 @@ h3 {
     background-color: #0bc918;
 }
 
-/* Estilos para las secciones */
 .content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 2em 0;
     text-align: center;
     background-color: #ffffff;
 }
 
-/* Estilos para la sección de Productos */
 #productos {
-    padding: 40px;
+    padding: 2em;
     color: #ffffff;
 }
 
-/* Estilos para las tarjetas de productos */
 .product-card {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.1);
     display: inline-block;
-    margin: 0 20px 20px 0;
-    width: calc(30% - 20px);
+    margin: 0 1.5em 1.5em 0;
+    width: calc(30% - 1.5em);
     text-align: center;
-    padding: 10px;
+    padding: 1em;
     transition: transform 0.3s ease-in-out;
 }
 
 .product-card img {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
 }
 
 .product-card h3 {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 1.3em;
+    margin-top: 1em;
 }
 
 .product-card p {
-    font-size: 16px;
+    font-size: 1em;
     color: #555;
 }
 
 .product-card .price {
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: bold;
     color: #333;
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
 .product-card:hover {
@@ -209,17 +236,17 @@ h3 {
 }
 
 .product-card .buy-button-container {
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
 .product-card .buy-button {
     background-color: #42a115;
     color: #fff;
-    padding: 8px 16px;
+    padding: 0.8em 1.6em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
     transition: background-color 0.3s;
 }
 
@@ -227,13 +254,12 @@ h3 {
     background-color: #0bc918;
 }
 
-/* Estilos para el icon container */
 .icon-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 1em;
     border: 2px solid #000000;
 }
 
@@ -243,37 +269,36 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 2em;
     box-sizing: border-box;
 }
 
 .icon-box h4,
 .icon-box p {
     color: black;
-    margin: 10px 0;
+    margin: 1em 0;
 }
 
 .icon-box-img {
-    width: 90px;
+    width: 3em;
     height: auto;
 }
 
 #row-1692707941 > .col {
-    padding: 0px 0px 0px 0px;
+    padding: 0;
 }
 
-/* ESTILOS SECCIÓN FOOTER */
 footer {
     background-color: #000000;
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 3em;
     align-items: center;
 }
 
 .payment-container h3 {
-    font-size: 24px;
+    font-size: 2.4em;
 }
 
 .links-container a {
@@ -293,7 +318,7 @@ footer {
 
 .links-container i {
     font-size: 2em;
-    margin-right: 5px;
+    margin-right: 0.5em;
 }
 
 .links-container span {
@@ -301,24 +326,24 @@ footer {
 }
 
 .payment-container img {
-    height: 40px;
-    margin-right: 10px;
+    height: 4em;
+    margin-right: 1em;
 }
 
 .links-container a {
     color: #fff;
-    margin-right: 30px;
+    margin-right: 1.5em;
     text-decoration: none;
     display: block;
     line-height: 1.5em;
-    padding-bottom: 10px;
+    padding-bottom: 1em;
 }
 
 .map-container {
     width: 50%;
-    height: 200px;
+    height: 20em;
     float: right;
-    margin-left: 50px;
+    margin-left: 5em;
 }
 
 .map-container iframe {
@@ -330,25 +355,24 @@ footer {
 .copyright {
     background-color: #000000;
     color: #fff;
-    padding: 10px;
+    padding: 1em;
 }
 
-/* Estilo para h2 dentro del footer */
 footer h3 {
     color: #ffffff;
 }
 
 #scrollToTop {
     position: fixed;
-    bottom: 10px;
-    right: 20px;
+    bottom: 1em;
+    right: 2em;
     display: none;
-    font-size: 20px;
+    font-size: 2em;
     background-color: #42a115;
     color: #ffffff;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 1em;
+    border-radius: 0.5em;
     cursor: pointer;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out;
