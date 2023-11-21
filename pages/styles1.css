@@ -18,13 +18,10 @@ h3 {
     position: fixed;
     top: 0;
     width: 100%;
-<<<<<<< HEAD
     background-color: rgba(0, 0, 0, 0.539);
     padding: 1px;
-=======
     background-color: rgba(0, 0, 0, 0.45);
     padding: 0.5em;
->>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -51,21 +48,15 @@ h3 {
 }
 
 .navigation li {
-<<<<<<< HEAD
     margin-right: 2vw;
-=======
     margin-right: 2em;
->>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
 }
 
 .navigation a {
     text-decoration: none;
     color: #fff;
-<<<<<<< HEAD
     font-size: 1.7vw;
-=======
     font-size: 1.3em;
->>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
     transition: color 0.3s;
 }
 
@@ -77,11 +68,8 @@ h3 {
     display: none;
     cursor: pointer;
     color: #fff;
-<<<<<<< HEAD
     font-size: 1vw;
-=======
     font-size: 1em;
->>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
     transition: color 0.3s;
 }
 
@@ -107,42 +95,37 @@ h3 {
     }
 
     .navigation.show li {
-<<<<<<< HEAD
         padding: 1vw;
-=======
         padding: 1em;
->>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
         text-align: center;
         border-bottom: 1px solid #ffffff;
         margin-right: 0;
     }
 }
 
-<<<<<<< HEAD
+
 .cart-container { 
     display: flex;
     align-items: center;
     margin-left: auto; 
     padding-right: 1.5vw; 
-=======
+}
+
+
 .cart-container {
     display: flex;
     align-items: center;
     margin-left: auto;
     padding-right: 1.5em;
     position: relative;
->>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
 }
 
 .cart-icon {
     cursor: pointer;
     position: relative;
     color: #0bc918;
-<<<<<<< HEAD
     font-size: 1.8vw; 
-=======
     font-size: 1.5em;
->>>>>>> a1f763a4302b5583e857537b50a9e547109ee8cd
 }
 
 .banner {
