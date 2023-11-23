@@ -1,16 +1,19 @@
+/* Estilos para el body (fondo semitransparente) */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Estilo para h2 */
 h2 {
     color: #000000;
     font-size: 2em;
 }
 
+/* Estilo para h3 */
 h3 {
-    color: #000000;
+    color: #ffffff;
     font-size: 1.5em;
 }
 
@@ -19,18 +22,25 @@ h3 {
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.539);
-    padding: 1px;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 0.5em;
+    padding: 10px 20px; /* Ajusta el padding según tus preferencias */
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    z-index: 100;
     transition: background-color 0.3s, backdrop-filter 0.3s; 
     border: 2px solid #fff;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
 }
+
+.logo {
+    width: 20px; /* Ajusta el tamaño del logo según tus preferencias */
+    height: auto;
+    margin-top: 5px;
+    border: 2px solid #0bc918;
+    border-radius: 11px;
+}
+
 
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.9);
@@ -44,32 +54,45 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Alinea los elementos a la derecha */
-    width: 100%; /* Asegura que la clase ocupa todo el ancho */
+    width: 85%; /* Asegura que la clase ocupa todo el ancho */
 }
 
 .navigation li {
-    margin-right: 2vw;
-    margin-right: 2em;
+    margin-right: 1vw; /* Ajusta según tus preferencias */
 }
 
 .navigation a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.7vw;
-    font-size: 1.3em;
+    font-size: 1.5vw;
     transition: color 0.3s;
 }
 
-.navigation a:hover {
-    color: #0fff2f;
+.cart-container { 
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Alinea el carrito a la derecha */
+    order: 3; /* Establece el orden para que aparezca al final */
+}
+
+.cart-icon {
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;
+    font-size: 1.8vw; 
+    transition: color 0.3s;
+    margin-top: 5px; /* Ajusta según tus preferencias */
+}
+
+.cart-icon:hover {
+    color: #0bc918; /* Cambia el color al hacer hover */
 }
 
 .menu-icon {
     display: none;
     cursor: pointer;
     color: #fff;
-    font-size: 1vw;
-    font-size: 1em;
+    font-size: 4vw;
     transition: color 0.3s;
 }
 
@@ -96,37 +119,12 @@ h3 {
 
     .navigation.show li {
         padding: 1vw;
-        padding: 1em;
         text-align: center;
         border-bottom: 1px solid #ffffff;
         margin-right: 0;
     }
 }
 
-
-.cart-container { 
-    display: flex;
-    align-items: center;
-    margin-left: auto; 
-    padding-right: 1.5vw; 
-}
-
-
-.cart-container {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    padding-right: 1.5em;
-    position: relative;
-}
-
-.cart-icon {
-    cursor: pointer;
-    position: relative;
-    color: #0bc918;
-    font-size: 1.8vw; 
-    font-size: 1.5em;
-}
 
 .banner {
     position: relative;
@@ -135,11 +133,12 @@ h3 {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 4em 0;
+    padding: 200px 0;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Estilo para h1 en el banner */
 .banner h1 {
     color: #FFFFFF;
     font-size: 3.5em;
@@ -149,12 +148,12 @@ h3 {
 
 .banner h3 {
     font-size: 1.8em;
-    margin-bottom: 1.5em;
+    margin-bottom: 20px;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 1em 2em;
+    padding: 10px 20px;
     background-color: #42a115;
     color: white;
     text-decoration: none;
@@ -166,52 +165,55 @@ h3 {
     background-color: #0bc918;
 }
 
+/* Estilos para las secciones */
 .content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2em 0;
+    padding: 20px 0;
     text-align: center;
     background-color: #ffffff;
 }
 
+/* Estilos para la sección de Productos */
 #productos {
-    padding: 2em;
+    padding: 40px;
     color: #ffffff;
 }
 
+/* Estilos para las tarjetas de productos */
 .product-card {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.1);
     display: inline-block;
-    margin: 0 1.5em 1.5em 0;
-    width: calc(30% - 1.5em);
+    margin: 0 20px 20px 0;
+    width: calc(30% - 20px);
     text-align: center;
-    padding: 1em;
+    padding: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
 .product-card img {
     width: 100%;
-    height: auto;
+    height: 200px;
     object-fit: cover;
 }
 
 .product-card h3 {
-    font-size: 1.3em;
-    margin-top: 1em;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .product-card p {
-    font-size: 1em;
+    font-size: 16px;
     color: #555;
 }
 
 .product-card .price {
-    font-size: 1.2em;
+    font-size: 18px;
     font-weight: bold;
     color: #333;
-    margin-top: 1em;
+    margin-top: 10px;
 }
 
 .product-card:hover {
@@ -219,17 +221,17 @@ h3 {
 }
 
 .product-card .buy-button-container {
-    margin-top: 1em;
+    margin-top: 10px;
 }
 
 .product-card .buy-button {
     background-color: #42a115;
     color: #fff;
-    padding: 0.8em 1.6em;
+    padding: 8px 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 16px;
     transition: background-color 0.3s;
 }
 
@@ -237,12 +239,13 @@ h3 {
     background-color: #0bc918;
 }
 
+/* Estilos para el icon container */
 .icon-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #ffffff;
-    padding: 1em;
+    padding: 10px;
     border: 2px solid #000000;
 }
 
@@ -252,23 +255,23 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    padding: 20px;
     box-sizing: border-box;
 }
 
 .icon-box h4,
 .icon-box p {
     color: black;
-    margin: 1em 0;
+    margin: 10px 0;
 }
 
 .icon-box-img {
-    width: 3em;
+    width: 90px;
     height: auto;
 }
 
 #row-1692707941 > .col {
-    padding: 0;
+    padding: 0px 0px 0px 0px;
 }
 
 footer {
@@ -276,12 +279,12 @@ footer {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 3em;
+    padding: 3vw;
     align-items: center;
 }
 
 .payment-container h3 {
-    font-size: 2.4em;
+    font-size: 2.4vw; 
 }
 
 .links-container a {
@@ -292,41 +295,41 @@ footer {
 }
 
 .links-container a:hover {
-    color: #0fff2f;
+    color: #0fff2f; 
 }
 
 .links-container a[href*="instagram"]:hover {
-    color: #e4405f;
+    color: #e4405f; 
 }
 
 .links-container i {
-    font-size: 2em;
-    margin-right: 0.5em;
+    font-size: 2vw; 
+    margin-right: 0.5vw; 
 }
 
 .links-container span {
-    font-size: 1.5em;
+    font-size: 2vw; 
 }
 
 .payment-container img {
-    height: 4em;
-    margin-right: 1em;
+    height: 3.5vw;
+    margin-right: 1vw;
 }
 
 .links-container a {
     color: #fff;
-    margin-right: 1.5em;
+    margin-right: 3vw;
     text-decoration: none;
     display: block;
-    line-height: 1.5em;
-    padding-bottom: 1em;
+    line-height: 1.5vw; 
+    padding-bottom: 1vw; 
 }
 
 .map-container {
     width: 50%;
-    height: 20em;
+    height: 20vw;
     float: right;
-    margin-left: 5em;
+    margin-left: 5vw;
 }
 
 .map-container iframe {
@@ -335,27 +338,23 @@ footer {
     border: none;
 }
 
-.copyright {
+.copyright  {
     background-color: #000000;
     color: #fff;
-    padding: 1em;
-}
-
-footer h3 {
-    color: #ffffff;
+    padding: 1vw;
 }
 
 #scrollToTop {
     position: fixed;
-    bottom: 1em;
-    right: 2em;
+    bottom: 1vw;
+    right: 2vw;
     display: none;
-    font-size: 2em;
+    font-size: 2vw;
     background-color: #42a115;
     color: #ffffff;
     border: none;
-    padding: 1em;
-    border-radius: 0.5em;
+    padding: 1vw;
+    border-radius: 0.5vw;
     cursor: pointer;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out;
@@ -364,4 +363,3 @@ footer h3 {
 #scrollToTop:hover {
     background-color: #0fff2f;
 }
-
