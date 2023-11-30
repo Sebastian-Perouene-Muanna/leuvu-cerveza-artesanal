@@ -81,57 +81,82 @@ function openCategoryPage(category) {
 
 let cartItems = [];
 
-
 function addToCart(productName) {
-    cartItems.push(productName);
+    const existingProduct = cartItems.find(item => item.name === productName);
+
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cartItems.push({ name: productName, quantity: 1 });
+    }
+
     updateCartCount();
 }
-
 
 function openCart() {
     updateCartPreview();
     document.getElementById('cartModal').style.display = 'block';
 }
 
-
 function closeCartModal() {
     document.getElementById('cartModal').style.display = 'none';
 }
 
-
 function updateCartCount() {
     const cartItemCount = document.getElementById('cartItemCount');
-    cartItemCount.textContent = cartItems.length;
+    const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
+    cartItemCount.textContent = totalQuantity;
 }
-
 
 function updateCartPreview() {
     const cartPreview = document.getElementById('cartPreview');
     const cartList = document.getElementById('cartList');
 
-    cartList.innerHTML = ''; 
-    
+    cartList.innerHTML = '';
+
     if (cartItems.length === 0) {
         cartPreview.innerHTML = 'El carrito está vacío';
     } else {
         cartItems.forEach(item => {
             const cartItem = document.createElement('li');
-            cartItem.textContent = item;
+            cartItem.textContent = `${item.name} - ${item.quantity}`;
             cartList.appendChild(cartItem);
         });
     }
 }
 
-
-
 function continueShopping() {
     closeCartModal();
 }
 
-
 function clearCart() {
-    cartItems = [];
-    updateCartCount();
-    updateCartPreview();
-    closeCartModal();
+    // Utiliza SweetAlert para mostrar la alerta
+    Swal.fire({
+        icon: 'info',
+        title: 'El carrito está vacio.',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // Limpia el carrito después de la compra
+            cartItems = [];
+            updateCartCount();
+            updateCartPreview();
+            closeCartModal();
+        }
+    });
+}
+
+function finishPurchase() {
+    // Utiliza SweetAlert para mostrar la alerta de compra finalizada
+    Swal.fire({
+        icon: 'success',
+        title: '¡Compra finalizada!',
+        text: 'Gracias por tu compra.',
+    });
+}
+
+function checkout() {
+    // Aquí puedes agregar la lógica para procesar el checkout
+    // Por ejemplo, redirigir a una página de pago o realizar alguna acción
+    alert("¡Compra realizada con éxito!");
+    clearCart(); // Limpiar el carrito después de la compra
 }
