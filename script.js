@@ -130,13 +130,13 @@ function continueShopping() {
 }
 
 function clearCart() {
-    // Utiliza SweetAlert para mostrar la alerta
+    
     Swal.fire({
         icon: 'info',
         title: 'El carrito está vacio.',
     }).then((result) => {
         if (result.isConfirmed) {
-            // Limpia el carrito después de la compra
+           
             cartItems = [];
             updateCartCount();
             updateCartPreview();
@@ -146,7 +146,7 @@ function clearCart() {
 }
 
 function finishPurchase() {
-    // Utiliza SweetAlert para mostrar la alerta de compra finalizada
+    
     Swal.fire({
         icon: 'success',
         title: '¡Compra finalizada!',
@@ -155,8 +155,7 @@ function finishPurchase() {
 }
 
 function checkout() {
-    // Aquí puedes agregar la lógica para procesar el checkout
-    // Por ejemplo, redirigir a una página de pago o realizar alguna acción
+    
     alert("¡Compra realizada con éxito!");
-    clearCart(); // Limpiar el carrito después de la compra
+    clearCart(); // 
 }
