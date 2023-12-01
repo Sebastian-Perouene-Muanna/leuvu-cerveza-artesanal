@@ -1,17 +1,16 @@
-/* Estilos para el body (fondo semitransparente) */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Estilo para h2 */
+
 h2 {
     color: #000000;
     font-size: 2em;
 }
 
-/* Estilo para h3 */
+
 h3 {
     color: #ffffff;
     font-size: 1.5em;
@@ -22,7 +21,7 @@ h3 {
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.539);
-    padding: 10px 20px; /* Ajusta el padding según tus preferencias */
+    padding: 10px 20px; 
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -34,7 +33,7 @@ h3 {
 }
 
 .logo {
-    width: 20px; /* Ajusta el tamaño del logo según tus preferencias */
+    width: 20px; 
     height: auto;
     margin-top: 5px;
     border: 2px solid #0bc918;
@@ -53,12 +52,12 @@ h3 {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-    width: 85%; /* Asegura que la clase ocupa todo el ancho */
+    justify-content: flex-end; 
+    width: 85%; 
 }
 
 .navigation li {
-    margin-right: 1vw; /* Ajusta según tus preferencias */
+    margin-right: 1vw; 
 }
 
 .navigation a {
@@ -71,8 +70,8 @@ h3 {
 .cart-container { 
     display: flex;
     align-items: center;
-    margin-left: auto; /* Alinea el carrito a la derecha */
-    order: 3; /* Establece el orden para que aparezca al final */
+    margin-left: auto; 
+    order: 3; 
 }
 
 .cart-icon {
@@ -81,11 +80,11 @@ h3 {
     color: #ffffff;
     font-size: 1.8vw; 
     transition: color 0.3s;
-    margin-top: 5px; /* Ajusta según tus preferencias */
+    margin-top: 5px; 
 }
 
 .cart-icon:hover {
-    color: #0bc918; /* Cambia el color al hacer hover */
+    color: #0bc918; 
 }
 
 .menu-icon {
@@ -138,7 +137,7 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Estilo para h1 en el banner */
+
 .banner h1 {
     color: #FFFFFF;
     font-size: 3.5em;
@@ -166,10 +165,8 @@ h3 {
 }
 
 
-
-/* Estilos para el modal del carrito */
 .modal {
-    display: none; /* Por defecto, el modal está oculto */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
@@ -202,7 +199,7 @@ h3 {
     cursor: pointer;
 }
 
-/* Estilos adicionales para el contenido del carrito */
+
 #cartList {
     list-style-type: none;
     padding: 0;
@@ -230,14 +227,14 @@ h3 {
 
 
 #totalAmount {
-    color: black; /* Puedes cambiar "black" al color que desees */
+    color: black; 
     font-weight: bold;
-    font-size: 1.2em; /* Puedes ajustar el tamaño según tus preferencias */
+    font-size: 1.2em; 
 }
 
 
 
-/* Estilos para las secciones */
+
 .content {
     max-width: 800px;
     margin: 0 auto;
@@ -246,13 +243,13 @@ h3 {
     background-color: #ffffff;
 }
 
-/* Estilos para la sección de Productos */
+
 #productos {
     padding: 40px;
     color: #ffffff;
 }
 
-/* Estilos para las tarjetas de productos */
+
 .product-card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -309,15 +306,15 @@ h3 {
 }
 
 .buy-button-container a {
-    text-decoration: none; /* Elimina el subrayado */
-    font-size: 1.2em; /* Puedes ajustar el tamaño de la fuente según tu preferencia */
+    text-decoration: none; 
+    font-size: 1.2em; 
 }
 
 .product-card .buy-button:hover {
     background-color: #0bc918;
 }
 
-/* Estilos para el icon container */
+
 .icon-container {
     display: flex;
     justify-content: space-around;
